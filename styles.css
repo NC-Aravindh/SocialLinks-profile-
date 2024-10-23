@@ -1,0 +1,114 @@
+:root {
+    --light-green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+html,body{
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-900);
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+#profile-container {
+    background-color: var(--grey-800);
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8em 10em 1fr ;
+    border-radius: 6%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+#pic-section {
+    height: 5em;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    transform: scale(0.4);
+}
+
+#intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name {
+    margin: 0;
+}
+
+h5 {
+    color: var(--light-green);
+    margin: 0.9em 0;
+}
+
+#about{
+    font-size: 1em
+}
+
+#button-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1.5em;
+    flex-wrap: wrap;
+}
+
+.button-styling {
+    width: 80%;
+    height: 3em;
+    background-color: var(--grey-700);
+    color: var(--white);
+    border: none;
+    border-radius: 7%;
+    padding: 1em;
+    font-weight: 700;
+}
+
+.button-styling:hover {
+    background-color: var(--light-green);
+    color:var(--grey-700);
+}
+
+footer{
+    text-align: center;
+    max-height:5em;
+    position:absolute;
+    bottom: 1em;
+}
+.attribution {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media  (max-width:768px) {
+    #profile-container{
+        width: auto;
+    }
+    
+}
